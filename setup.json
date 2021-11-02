@@ -1,0 +1,22 @@
+{
+    "port" : 8080,
+    "target_url" : "https://movies.yahoo.com.tw/movie_thisweek.html",
+    "target_element" : ".release_info",
+    "target_childs" : [
+        {
+            "target_class_name" : ".release_movie_name .gabtn:first-child",
+            "data_name" : "movie name"
+        },
+        {
+            "target_class_name" : ".release_movie_time",
+            "data_name" : "movie time"
+        }
+    ],
+    "target_attr" : [
+        {
+            "target_class_name" : ".release_movie_name .gabtn:first-child",
+            "attr_type" : "href",
+            "attr_name" : "info link"
+        }
+    ]
+}
