@@ -1,6 +1,6 @@
 {
     "port" : 8080,
-    "target_url" : "https://movies.yahoo.com.tw/movie_thisweek.html",
+    "target_url" : "https://movies.yahoo.com.tw/movie_comingsoon.html",
     "target_element" : ".release_info",
     "target_childs" : [
         {
@@ -18,5 +18,6 @@
             "attr_type" : "href",
             "attr_name" : "info link"
         }
-    ]
+    ],
+    "output_filename" : "sheet"
 }

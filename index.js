@@ -6,7 +6,7 @@ const {port} = require('./setup.json');
 const app = express();
 const PORT = port;
 
-scraper();
+scraper()
 
 app.listen(PORT, () => {
     console.log(`Scraper is running on http://localhost:${port}`);

@@ -1,8 +1,9 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
+const {writeSheet} = require('./writeSheet');
 const {target_url, target_element, target_childs, target_attr} = require('./setup.json');
 
-function scraper () {
+const scraper = async () => {
     axios.get(target_url)
     .then(res => {
         const html = res.data;
@@ -20,8 +21,8 @@ function scraper () {
             })
             dataList.push(item);
         });
-        
-        console.log(dataList);
+
+        writeSheet(dataList);
     })
 }
 
